@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { Myc04Component } from './myc04/myc04.component';
 import { Myc05Component } from './myc05/myc05.component';
 import { Myc06Component } from './myc06/myc06.component';
+import { Myc01Component } from './myc01/myc01.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Myc04Component,
     Myc05Component,
-    Myc06Component
+    Myc06Component,
+    Myc01Component
   ],
   imports: [
     BrowserModule,

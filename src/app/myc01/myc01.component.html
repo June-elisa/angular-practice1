@@ -1,0 +1,17 @@
+<p>myc01 works!</p>
+
+<h3>您的面试分数:{{ score }}</h3>
+<button (click)="score = score - 10" [disabled]="score == 0" *ngIf="score > 0"> 减分
+</button>
+
+<button (click)="score = score + 10" [disabled]="score == 100" *ngIf="score < 100">
+    加分
+</button>
+
+<ng-container *ngIf="score >= 60; else abc">
+    <p>恭喜! 通过面试.</p>
+</ng-container>
+
+<ng-template #abc>
+    <p>很遗憾! 面试未通过.</p>
+</ng-template>
