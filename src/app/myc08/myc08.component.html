@@ -1,0 +1,9 @@
+<p>myc08 works!</p>
+<h1>生命周期</h1>
+
+<button (click)="names.push('亮亮')">新增</button>
+<ul>
+    <li *ngFor="let item of names">
+        {{ item }}
+    </li>
+</ul>

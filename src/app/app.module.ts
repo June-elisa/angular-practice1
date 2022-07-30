@@ -19,6 +19,7 @@ import { SqrtPipe } from './sqrt.pipe';
 import { PingfangPipe } from './pingfang.pipe';
 import { PowPipe } from './pow.pipe';
 import { GenderPipe } from './gender.pipe';
+import { Myc08Component } from './myc08/myc08.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GenderPipe } from './gender.pipe';
     SqrtPipe,
     PingfangPipe,
     PowPipe,
-    GenderPipe
+    GenderPipe,
+    Myc08Component
   ],
   imports: [
     BrowserModule,
