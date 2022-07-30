@@ -1,0 +1,43 @@
+<p>myc04 works!</p>
+
+<ul>
+    <li>name:{{ name }}</li>
+    <li>age:{{ age }}</li>
+    <li>married:{{ married }}</li>
+    <li>teachers:{{ teachers }}</li>
+    <li>boss:{{ boss }}</li>
+    <li>teachers[0] :{{ teachers[0] }}</li>
+    <li>boss.name:{{ boss.name}}</li>
+</ul>
+
+
+<ul>
+    <!-- 数学运算符 -->
+    <li>数学运算符</li>
+    <li>{{ 5 + 2 }}</li>
+    <li>{{ 5 - 2 }}</li>
+    <li>{{ 5 * 2 }}</li>
+    <li>{{ 5 / 2 }}</li>
+    <li>{{ 5 % 2 }}</li>
+
+    <!-- 比较运算符 -->
+    <li>比较运算符</li>
+    <li>{{ age > 18 }}</li>
+    <li>{{ age >= 18 }}</li>
+    <li>{{ age < 18 }}</li>
+    <li>{{ age <= 18 }}</li>
+
+
+    <!-- 三元运算符 -->
+    <li>三元运算符</li>
+    <li>{{ married ? "已婚" : "未婚" }}</li>
+
+    <!-- 逻辑运算符 -->
+    <li>逻辑运算符</li>
+    <li>{{ true && true }}</li>
+    <li>{{ true && false }}</li>
+    <li>{{ false || true }}</li>
+    <li>{{ false && false }}</li>
+    <li>{{ !false }}</li>
+    <li>{{ !true }}</li>
+</ul>
