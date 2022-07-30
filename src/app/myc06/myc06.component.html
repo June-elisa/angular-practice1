@@ -1,7 +1,34 @@
 <p>myc06 works!</p>
-计数器练习
+<h1>计数器练习</h1>
+
 <div>
     <button [disabled]="count <= 1" (click)="count = count -1"> - </button>
     <input type="text" [(ngModel)]="count">
     <button [disabled]="count >= 20" (click)="doAdd()"> + </button>
 </div>
+
+<hr/>
+<h1>系统管道pipe</h1>
+<p>大写：{{"dongdong" | uppercase}}</p>
+<p>小写：{{"DONGDONG" | lowercase}}</p>
+<p>单词首字母大写：{{"nice to meet you" | titlecase}}</p>
+<p>百分数：{{0.0555 | percent}}</p>
+<p>保留小数位：{{0.0555 | percent:"0.2"}}</p>
+<!-- percent: 'n.m' 整数最少n位, 小数最好m位 -->
+<p>保留小数位：{{0.0555 | percent:"2.2"}}</p>
+<p>千进位钱:{{ 123456.78 | currency }}</p>
+<p>千进位钱:{{ 123456.78 | currency: "¥" }}</p>
+
+<!-- 日期格式: -->
+<!-- 数据库中的时间通常为时间戳格式: 当前时间距离1970年1月1日凌晨的秒数 --> <!--
+year 年 y
+month 月 M
+day 日 d
+hour 时 h12小时 H24小时 minute分 m
+second秒 s -->
+<!-- 时间戳单位要求是 毫秒 -->
+<!-- 重复两位 代表自动补0 -->
+<p>{{ 1600933522520 | date: "yyyy-MM-dd HH:mm:ss" }}</p> 
+<p>{{ 1600933522520 | date: "yyyy-MM-dd hh:mm:ss" }}</p> 
+
+<p>{{ 1600933522520 | date: "y-M-d H:m:s" }}</p>
