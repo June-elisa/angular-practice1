@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Myc04Component } from './myc04/myc04.component';
 import { Myc05Component } from './myc05/myc05.component';
+import { Myc06Component } from './myc06/myc06.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Myc04Component,
-    Myc05Component
+    Myc05Component,
+    Myc06Component
   ],
   imports: [
     BrowserModule,

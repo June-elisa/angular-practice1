@@ -1,0 +1,7 @@
+<p>myc06 works!</p>
+计数器练习
+<div>
+    <button [disabled]="count <= 1" (click)="count = count -1"> - </button>
+    <input type="text" [(ngModel)]="count">
+    <button [disabled]="count >= 20" (click)="doAdd()"> + </button>
+</div>
