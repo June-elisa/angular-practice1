@@ -1,0 +1,40 @@
+<p>myc02 works!</p>
+
+<ul>
+    <li *ngFor="let item of names">{{item}}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of names; let i = index">
+        <span>index:{{ i }}</span>
+        <br/>
+        <span>name:{{ item }}</span>
+    </li>
+</ul>
+
+<table border="1">
+    <tr>
+  <td>序号</td> <td>名称</td> <td>单价</td> <td>数量</td> <td>总价</td>
+  </tr>
+  <tr *ngFor="let item of products; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.price }}</td>
+      <td>{{ item.count }}</td>
+      <td>{{ item.price * item.count }}</td>
+    </tr>
+  </table>
+  <hr />
+  <div>
+  <div>
+  <span>商品名: </span>
+  <input type="text" [(ngModel)]="title" />
+  </div> <div>
+  <span>单价: </span>
+      <input type="number" [(ngModel)]="price" />
+    </div>
+  <div>
+  <span>数量: </span>
+  <input type="number" [(ngModel)]="count" />
+  </div>
+  <button (click)="doAdd()">添加</button> </div>

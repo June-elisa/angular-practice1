@@ -8,6 +8,7 @@ import { Myc04Component } from './myc04/myc04.component';
 import { Myc05Component } from './myc05/myc05.component';
 import { Myc06Component } from './myc06/myc06.component';
 import { Myc01Component } from './myc01/myc01.component';
+import { Myc02Component } from './myc02/myc02.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Myc01Component } from './myc01/myc01.component';
     Myc04Component,
     Myc05Component,
     Myc06Component,
-    Myc01Component
+    Myc01Component,
+    Myc02Component
   ],
   imports: [
     BrowserModule,
