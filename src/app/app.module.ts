@@ -14,6 +14,11 @@ import { Mycc05Component } from './mycc05/mycc05.component';
 import { HiddenDirective } from './hidden.directive';
 import { DangerDirective } from './danger.directive';
 import { FocusDirective } from './focus.directive';
+import { Myc07Component } from './myc07/myc07.component';
+import { SqrtPipe } from './sqrt.pipe';
+import { PingfangPipe } from './pingfang.pipe';
+import { PowPipe } from './pow.pipe';
+import { GenderPipe } from './gender.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { FocusDirective } from './focus.directive';
     Mycc05Component,
     HiddenDirective,
     DangerDirective,
-    FocusDirective
+    FocusDirective,
+    Myc07Component,
+    SqrtPipe,
+    PingfangPipe,
+    PowPipe,
+    GenderPipe
   ],
   imports: [
     BrowserModule,
