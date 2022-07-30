@@ -1,0 +1,20 @@
+<p>myc03 works!</p>
+
+<button (click)="size = size + 5">字体变大</button>
+<br>
+<span style="font-size: 18px;">hello world!</span>
+
+<!-- 值是对象类型: 属性名不能带 中划线 -->
+<span [ngStyle]="{ color: 'green', fontSize: size + 'px' }">Hello World!</span>
+
+<!-- 动态css 样式类 --> 
+<div class="pages"> 
+    <!-- ng-class -->
+    <!-- 与vue相同, 动态class的值是对象类型, 依赖true/false 来决定样式是否生效 --> 
+    <span [ngClass]="{ cur: curP == 0 }"></span>
+    <span [ngClass]="{ cur: curP == 1 }"></span>
+    <span [ngClass]="{ cur: curP == 2 }"></span>
+    <span [ngClass]="{ cur: curP == 3 }"></span>
+</div>
+<p>当前页：{{curP}}</p>
+<button (click)="prevPage()">上一页</button> <button (click)="nextPage()">下一页</button>
